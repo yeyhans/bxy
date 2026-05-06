@@ -9,5 +9,7 @@ export default defineConfig({
 	site: 'https://www.bxy.cl',
 	integrations: [sitemap()],
 	output: 'server',
-	adapter: vercel(),
+	adapter: vercel({
+		runtime: 'nodejs22.x',
+	}),
 });
