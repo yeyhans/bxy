@@ -1,0 +1,178 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+
+// Metadata configuration
+const title = "BYX | Experiencias Digitales Minimalistas";
+const description = "Portfolio y servicios profesionales de BYX. Creamos experiencias web minimalistas, rápidas y de alto rendimiento.";
+
+// Structured Data (JSON-LD)
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BYX",
+  "url": "https://byx.cl",
+  "description": description,
+  "sameAs": [
+    "https://bolderprocess.com/",
+    "https://yhans.cl"
+  ]
+};
+---
+
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+	</head>
+	<body>
+		<main>
+			<div class="logo-container">
+				<img src="/logo.PNG" alt="BYX Logo" class="logo" />
+			</div>
+		</main>
+
+		<footer>
+			<div class="social-links">
+				<a href="https://bolderprocess.com/" target="_blank" rel="noopener noreferrer" class="social-link">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+					<span>Bolder Process</span>
+				</a>
+				<a href="https://yhans.cl" target="_blank" rel="noopener noreferrer" class="social-link">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+					<span>Yhans.cl</span>
+				</a>
+			</div>
+		</footer>
+
+		<style is:global>
+			:root {
+				--bg-color: #000000;
+				--accent-color: #ffffff;
+				--font-main: "Outfit", sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+				background-color: var(--bg-color);
+				color: var(--accent-color);
+				font-family: var(--font-main);
+				overflow: hidden; /* Prohibido el scroll */
+				position: fixed; /* Asegura que no haya desplazamiento en iOS */
+			}
+
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				padding: 2rem;
+				height: 100dvh;
+			}
+
+			main {
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+			}
+
+			.logo-container {
+				width: 100%;
+				max-width: 400px;
+				display: flex;
+				justify-content: center;
+				animation: fadeIn 1.5s ease-out;
+			}
+
+			.logo {
+				width: 100%;
+				height: auto;
+				max-height: 60vh;
+				object-fit: contain;
+				filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
+			}
+
+			footer {
+				width: 100%;
+				padding-bottom: 2rem;
+				animation: slideUp 1s ease-out 0.5s both;
+			}
+
+			.social-links {
+				display: flex;
+				justify-content: center;
+				gap: 3rem;
+				width: 100%;
+			}
+
+			.social-link {
+				color: var(--accent-color);
+				text-decoration: none;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.5rem;
+				font-size: 0.8rem;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				opacity: 0.6;
+				transition: all 0.3s ease;
+			}
+
+			.social-link:hover {
+				opacity: 1;
+				transform: translateY(-5px);
+				text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+			}
+
+			.icon {
+				width: 24px;
+				height: 24px;
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+					transform: scale(0.95);
+				}
+				to {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+
+			@keyframes slideUp {
+				from {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			/* Responsive tweaks */
+			@media (max-width: 600px) {
+				.logo-container {
+					max-width: 280px;
+				}
+				.social-links {
+					gap: 2rem;
+				}
+				.social-link span {
+					font-size: 0.7rem;
+				}
+			}
+		</style>
+	</body>
+</html>

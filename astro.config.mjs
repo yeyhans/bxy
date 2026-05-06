@@ -1,4 +1,4 @@
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel';
 
 // @ts-check
 import { defineConfig } from 'astro/config';
