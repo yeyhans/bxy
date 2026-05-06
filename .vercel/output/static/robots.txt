@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://byx.cl/sitemap-index.xml
