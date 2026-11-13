@@ -19,11 +19,36 @@ export const contact = {
 } as const;
 
 export const navLinks = [
-  { href: "#commerce-core", label: "01. COMMERCE CORE" },
-  { href: "#vs-shopify", label: "02. VS SHOPIFY" },
-  { href: "#ecosistema", label: "03. ECOSISTEMA" },
-  { href: "#casos", label: "04. CASOS" },
-  { href: "#configurador", label: "05. CONFIGURADOR" },
+  { href: "#precio", label: "01. PRECIO Y SOBERANÍA" },
+  { href: "#llave-en-mano", label: "02. LISTA PARA VENDER" },
+  { href: "#a-tu-medida", label: "03. A TU MEDIDA" },
+  { href: "#bxy", label: "04. B x Y" },
+  { href: "#configurador", label: "05. COTIZAR" },
+] as const;
+
+/* ------------------------------------------------------------------ */
+/* Value proposition (condensed copy)                                  */
+/* ------------------------------------------------------------------ */
+
+export const pillars = [
+  {
+    id: "precio",
+    title: "Precio justo y soberanía",
+    tagline: "Pagas una vez. Es tuya para siempre.",
+    body: "$350.000 + IVA, pago único. 0% de comisión por venta y nada de suscripciones en dólares ni apps de pago mensual. La tienda, la base de datos y el servidor están a tu nombre. Ninguna política extranjera puede congelar tu negocio.",
+  },
+  {
+    id: "llave-en-mano",
+    title: "Lista para vender, simple de mantener",
+    tagline: "Nosotros la armamos. Tú solo vendes.",
+    body: "Te la entregamos llave en mano, con diseño a la medida de tu marca y Webpay, MercadoPago o Flow conectados a tu cuenta. Productos, stock, pedidos y clientes se manejan desde un solo panel. No hay plugins que actualizar ni apps que se rompan: todo viene integrado y la tienda carga rápido desde la red de Cloudflare.",
+  },
+  {
+    id: "a-tu-medida",
+    title: "Crece con herramientas a tu medida",
+    tagline: "Agrega lo que tu operación necesite, cuando lo necesite.",
+    body: "Partes con lo esencial y sumas módulos hechos para tu negocio, no plantillas genéricas: despachos con Starken, BlueExpress y Chilexpress, reportes y predicción de stock, reels automáticos con tu catálogo, y packaging y etiquetas. Todo se conecta al mismo sistema.",
+  },
 ] as const;
 
 /** Hero video slot. Drop the rendered file from apps/video-engine into public/video/. */

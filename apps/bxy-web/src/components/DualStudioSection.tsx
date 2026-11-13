@@ -17,13 +17,18 @@ const partners = [
 
 export function DualStudioSection() {
   return (
-    <section aria-labelledby="formula-title" className="border-b border-line">
-      <h2
-        id="formula-title"
-        className="border-b border-line px-4 py-8 font-display text-2xl font-semibold tracking-tight md:px-8 md:text-3xl"
-      >
-        La fórmula B x Y
-      </h2>
+    <section id="bxy" aria-labelledby="formula-title" className="border-b border-line">
+      <header className="flex flex-col gap-3 border-b border-line px-4 py-8 md:px-8">
+        <h2 id="formula-title" className="flex flex-col gap-3 font-display text-2xl font-semibold tracking-tight md:text-3xl">
+          <span className="font-mono text-[13px] font-medium tracking-normal text-accent">[04]</span>
+          <span>Diseño + ingeniería en un solo equipo</span>
+        </h2>
+        <p className="font-mono text-[13px] text-fg">B x Y: Bolder diseña, Yey construye.</p>
+        <p className="max-w-[60ch] text-base leading-relaxed text-muted">
+          Un estudio que cubre marca, UI, packaging y motion, y también arquitectura, APIs, datos e IA. Sin
+          intermediarios entre quien diseña y quien programa.
+        </p>
+      </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2">
         {partners.map((p, i) => (

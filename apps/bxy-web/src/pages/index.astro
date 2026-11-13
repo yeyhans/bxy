@@ -3,10 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import { Navbar } from '../components/Navbar';
 import { HeroSection } from '../components/HeroSection';
 import { HeroVideo } from '../components/HeroVideo';
-import { ComparisonSection } from '../components/ComparisonSection';
-import { CorePackageSection } from '../components/CorePackageSection';
-import { ModularEcosystemSection } from '../components/ModularEcosystemSection';
-import { CaseStudySection } from '../components/CaseStudySection';
+import { PillarsSection } from '../components/PillarsSection';
 import { DualStudioSection } from '../components/DualStudioSection';
 import { InteractiveQuoter } from '../components/InteractiveQuoter';
 import { SectionHeading } from '../components/SectionHeading';
@@ -60,16 +57,13 @@ const jsonLd = {
 			<HeroSection>
 				<HeroVideo client:idle src={heroVideo.src} poster={heroVideo.poster} label={heroVideo.label} />
 			</HeroSection>
-			<ComparisonSection />
-			<CorePackageSection />
-			<ModularEcosystemSection />
-			<CaseStudySection />
+			<PillarsSection />
 			<DualStudioSection />
 			<section id="configurador" aria-labelledby="configurador-title" class="border-b border-line">
 				<SectionHeading
 					id="configurador-title"
 					index="05"
-					title="Configurador de proyecto & cotización inmediata"
+					title="Arma tu tienda y cotiza al instante"
 					intro={`Arma tu stack sobre el Core de ${formatClp(CORE_PRICE_NET)} + IVA y envíanos la solicitud lista.`}
 				/>
 				<InteractiveQuoter client:visible />
