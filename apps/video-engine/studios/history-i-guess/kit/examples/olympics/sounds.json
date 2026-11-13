@@ -1,0 +1,23 @@
+[
+ [0.04, "whistle", -12], [["L1", "olympic"], "blip", -10], [["L1", "trainers"], "pop", -12], [["L1", "rat"], "crash", -8], [["L1", "during"], "boing", -12],
+ [["L2", "purpose"], "thud", -6], [["L2", "help"], "ding", -10],
+ ["TITLE", "sting", -4],
+ ["L3", "whoosh", -8], [["L3", "greece"], "blip", -6],
+ [["L4", "race"], "whistle", -12], [["L4", "200"], "ticks", -10],
+ [["L5", "naked"], "boing", -8], [["L5", "olive"], "shimmer", -10],
+ [["L6", "hat"], "ding", -8], [["L6", "nothing"], "thud", -8],
+ [["L7", "thousand"], "ticks", -10], [["L7", "emperor"], "pop", -10], [["L7", "bans"], "crash", -5],
+ ["L8", "whoosh", -8], [["L8", "1896"], "blip", -6], [["L8", "back"], "cheer", -8],
+ [["L9", "won"], "cheer", -10], [["L9", "water"], "pop", -10],
+ [["L10", "gift"], "shimmer", -12], [["L10", "cart"], "boing", -10],
+ ["L11", "blip", -6], [["L11", "five"], "ticks", -10], [["L11", "find"], "boing", -10],
+ ["L12", "whoosh", -8], [["L12", "marathon"], "whistle", -14],
+ [["L13", "rides"], "swish", -10], [["L13", "car"], "whoosh", -6], [["L13", "first"], "ding", -8],
+ [["L14", "rotten"], "boing", -10], [["L14", "nap"], "pop", -12], [["L14", "forth"], "ding", -10],
+ [["L15", "sport"], "pop", -10], [["L15", "20"], "ticks", -10],
+ [["L16", "art"], "shimmer", -10], [["L16", "gold"], "ding", -8],
+ ["L17", "blip", -6], [["L17", "72"], "boing", -10], [["L17", "silver"], "ding", -8], [["L17", "shooting"], "thud", -8],
+ ["L18", "blip", -6], [["L18", "in"], "pop", -8], [["L18", "2028"], "blip", -6], [["L18", "out"], "crash", -8],
+ [["L19", "podium"], "cheer", -10], [["L19", "bronze"], "pop", -10], [["L19", "silver"], "pop", -10],
+ ["L20", "drumroll", -6]
+]

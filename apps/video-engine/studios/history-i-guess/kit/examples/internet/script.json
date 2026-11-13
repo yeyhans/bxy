@@ -1,0 +1,139 @@
+{
+ "title": "history of the internet, i guess",
+ "voice": {
+  "voice": "am_liam+am_puck",
+  "speed": 1.25,
+  "sing_speed": 0.75
+ },
+ "gap": 0.06,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "nineteen sixty nine. two computers in california get connected."
+  },
+  {
+   "id": "L2",
+   "say": "one tries to say login."
+  },
+  {
+   "id": "L3",
+   "say": "L."
+  },
+  {
+   "id": "L4",
+   "say": "oh."
+  },
+  {
+   "id": "L5",
+   "say": "and it crashes."
+  },
+  {
+   "id": "L6",
+   "say": "so the first word ever sent on the internet is lo."
+  },
+  {
+   "id": "L7",
+   "say": "great start."
+  },
+  {
+   "id": "L8",
+   "say": "nineteen seventy one. a guy sends the first email, to the computer right next to him."
+  },
+  {
+   "id": "L9",
+   "say": "he forgot what it said. probably keyboard noise."
+  },
+  {
+   "id": "L10",
+   "say": "but he picks the at sign, and now it's in your email."
+  },
+  {
+   "id": "J1",
+   "sing": "[sings] eee-maaaail!"
+  },
+  {
+   "id": "L11",
+   "say": "nineteen eighty three. all the computers switch to one language, on one day."
+  },
+  {
+   "id": "L12",
+   "say": "that's the internet's birthday, kind of. nobody brings cake."
+  },
+  {
+   "id": "L13",
+   "say": "nineteen eighty nine. a guy at a physics lab plans a world wide web."
+  },
+  {
+   "id": "L14",
+   "say": "his boss writes on it: vague, but exciting."
+  },
+  {
+   "id": "L15",
+   "say": "nineteen ninety one. the first website goes up. it's about websites."
+  },
+  {
+   "id": "L16",
+   "say": "cambridge scientists point a camera at their coffee pot, so nobody walks to an empty one."
+  },
+  {
+   "id": "L17",
+   "say": "that's the first webcam. it watches coffee for ten years."
+  },
+  {
+   "id": "J2",
+   "sing": "[sings] diiiaaal-uuuup!"
+  },
+  {
+   "id": "L18",
+   "say": "everyone gets a modem. it screams. you're online."
+  },
+  {
+   "id": "L19",
+   "say": "then someone picks up the phone. you're not."
+  },
+  {
+   "id": "L20",
+   "say": "nineteen ninety five. someone sells a broken laser pointer online."
+  },
+  {
+   "id": "L21",
+   "say": "someone buys it. he collects them, apparently."
+  },
+  {
+   "id": "L22",
+   "say": "two thousand. everyone throws money at websites. the bubble pops."
+  },
+  {
+   "id": "L23",
+   "say": "two thousand five. the first video on the big video site: nineteen seconds at a zoo."
+  },
+  {
+   "id": "L24",
+   "say": "a guy says the elephants have long trunks. it's still up."
+  },
+  {
+   "id": "L25",
+   "say": "then phones get the internet. nobody looks up again."
+  },
+  {
+   "id": "J3",
+   "sing": "[sings] caaaaats!"
+  },
+  {
+   "id": "L26",
+   "say": "then computers learn to talk back."
+  },
+  {
+   "id": "L27",
+   "say": "so you ask one for a video about the history of the internet."
+  },
+  {
+   "id": "L28",
+   "say": "it makes this one. i guess."
+  }
+ ],
+ "title_at": "L7",
+ "max_pause": 0.27,
+ "lead": 0.15,
+ "slug": "internet_history"
+}

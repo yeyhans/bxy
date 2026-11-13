@@ -1,0 +1,105 @@
+{
+ "title": "history of the olympics, i guess",
+ "slug": "olympics",
+ "voice": {
+  "note": "the original was recorded in an expressive voice that holds spelled-out vowels and reads [deadpan] tags in voice_text, sped to about 245 wpm, and imported with import_voice.py. With narrate.py the free voice reads each held word plainly and timeline.py stretches it (the \"hold\" marks)."
+ },
+ "gap": 0.06,
+ "max_pause": 0.27,
+ "lead": 0.12,
+ "title_len": 0.9,
+ "title_at": "L2",
+ "tail": 1.0,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "nineteen oh four. the olympic marathon. the winner's trainers feed him rat poison. during the race."
+  },
+  {
+   "id": "L2",
+   "say": "on purpose. it's supposed to help.",
+   "voice_text": "[deadpan] on purpose. it's supposed to help."
+  },
+  {
+   "id": "L3",
+   "say": "ok, from the start. greece, seven seventy six b c."
+  },
+  {
+   "id": "L4",
+   "say": "the first olympics is one race. about two hundred meters."
+  },
+  {
+   "id": "L5",
+   "say": "you run it naaaked. covered in olive oil.",
+   "hold": "naked"
+  },
+  {
+   "id": "L6",
+   "say": "first prize: a hat made of leaves. second prize: nothiiing.",
+   "hold": "nothing"
+  },
+  {
+   "id": "L7",
+   "say": "this goes on for over a thousand years, until a roman emperor bans it."
+  },
+  {
+   "id": "L8",
+   "say": "about fifteen hundred years later, in eighteen ninety six, athens brings it back."
+  },
+  {
+   "id": "L9",
+   "say": "the marathon is won by a guy who delivers water for a living."
+  },
+  {
+   "id": "L10",
+   "say": "the king offers him a gift. he asks for a cart. for the water."
+  },
+  {
+   "id": "L11",
+   "say": "nineteen hundred, paris. the games last five months. some winners never find out they were at the olympics."
+  },
+  {
+   "id": "L12",
+   "say": "nineteen oh four. back to that marathon."
+  },
+  {
+   "id": "L13",
+   "say": "one guy rides part of it in a car, and crosses the line first."
+  },
+  {
+   "id": "L14",
+   "say": "another eats rotten apples, takes a naaaaap, and still comes fourth.",
+   "hold": "nap"
+  },
+  {
+   "id": "J1",
+   "sing": "[sings] tug of waaar!"
+  },
+  {
+   "id": "L15",
+   "say": "tug of war is an olympic sport. for twenty years."
+  },
+  {
+   "id": "L16",
+   "say": "so is art. you can win gold for a painting."
+  },
+  {
+   "id": "L17",
+   "say": "nineteen twenty. a seventy two year old wins silver. in shooting."
+  },
+  {
+   "id": "L18",
+   "say": "twenty twenty four. breakdancing is in. twenty twenty eight: it's ouuut.",
+   "hold": "out"
+  },
+  {
+   "id": "L19",
+   "say": "so, the podium for weirdest olympian. bronze: the nap guy. silver: the seventy two year old."
+  },
+  {
+   "id": "L20",
+   "say": "and gold goes toooo...",
+   "hold": "to"
+  }
+ ]
+}

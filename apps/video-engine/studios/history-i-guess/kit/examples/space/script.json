@@ -1,0 +1,99 @@
+{
+ "title": "history of space travel, i guess",
+ "slug": "space_travel",
+ "voice": {
+  "voice": "am_liam+am_puck",
+  "speed": 1.25,
+  "sing_speed": 0.75
+ },
+ "gap": 0.06,
+ "max_pause": 0.27,
+ "lead": 0.12,
+ "title_len": 0.9,
+ "title_at": "L1",
+ "tail": 1.0,
+ "lines": [
+  {
+   "id": "L1",
+   "say": "beep. beep. that's it. that's the first satellite."
+  },
+  {
+   "id": "L2",
+   "say": "nineteen fifty seven. the soviets throw a metal ball into space, and it just beeps."
+  },
+  {
+   "id": "L3",
+   "say": "for three weeks. then the battery dies."
+  },
+  {
+   "id": "L4",
+   "say": "america gets very nervous."
+  },
+  {
+   "id": "L5",
+   "say": "then a stray dog from moscow goes up. her name is laika."
+  },
+  {
+   "id": "L6",
+   "say": "she ends up on stamps."
+  },
+  {
+   "id": "L7",
+   "say": "nineteen sixty one. yuri gagarin says let's go, and goes around the whole planet."
+  },
+  {
+   "id": "L8",
+   "say": "he's home in under two hours."
+  },
+  {
+   "id": "J1",
+   "sing": "[sings] spaaaace!",
+   "sing_say": "space!"
+  },
+  {
+   "id": "L9",
+   "say": "nineteen sixty nine. two guys land on the moon and plant a flag."
+  },
+  {
+   "id": "L10",
+   "say": "when they leave, the engine blows the flag over."
+  },
+  {
+   "id": "L11",
+   "say": "twelve people walk on the moon. then, nineteen seventy two, everyone just stops."
+  },
+  {
+   "id": "L12",
+   "say": "twenty twenty six. four people fly all the way back, and just drive past it."
+  },
+  {
+   "id": "L13",
+   "say": "two thousand. people move into a space station. it's never been empty since."
+  },
+  {
+   "id": "L14",
+   "say": "it laps the planet about sixteen times a day. sixteen sunrises. sleeping is weird."
+  },
+  {
+   "id": "L15",
+   "say": "two thousand fifteen. a rocket comes back down and lands. standing up."
+  },
+  {
+   "id": "L16",
+   "say": "now they catch them with giant chopsticks."
+  },
+  {
+   "id": "J2",
+   "sing": "[sings] chooop-stiiicks!",
+   "sing_say": "chopsticks!"
+  },
+  {
+   "id": "L17",
+   "say": "so if you're under twenty six, there's never been a day without people in space."
+  },
+  {
+   "id": "L18",
+   "say": "and it all started with a beep."
+  }
+ ]
+}

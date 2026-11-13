@@ -1,0 +1,25 @@
+{
+ "title": "history of coffee, i guess",
+ "slug": "coffee",
+ "voice": {
+  "voice": "am_liam+am_puck",
+  "speed": 1.25,
+  "sing_speed": 0.75
+ },
+ "gap": 0.06,
+ "max_pause": 0.27,
+ "lead": 0.15,
+ "title_len": 0.9,
+ "title_at": "L2",
+ "tail": 1.2,
+ "lines": [
+  {"id": "L1", "say": "coffee grows wild in ethiopia. legend says a goat eats some and starts dancing."},
+  {"id": "L2", "say": "nobody asked the goat."},
+  {"id": "L3", "say": "fourteen hundreds. sufis in yemen drink it to stay awake all night."},
+  {"id": "J1", "sing": "cooo-feeeee!", "sing_say": "coffee!"},
+  {"id": "L4", "say": "fifteen eleven. mecca bans it."},
+  {"id": "L5", "say": "the sultan in cairo says no. ban over."},
+  {"id": "L6", "say": "sixteen fifty two. london gets a coffee house."},
+  {"id": "L7", "say": "now it's everywhere. you're probably holding one. i guess."}
+ ]
+}

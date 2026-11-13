@@ -1,0 +1,22 @@
+{
+ "title": "Dos clones, dos mundos",
+ "lang": "es",
+ "engine": "edge",
+ "edge_voice": "es-CL-LorenzoNeural",
+ "whisper_model": "small",
+ "length": [40, 60],
+ "pause": 0.15,
+ "lines": [
+  {"id": "open", "text": "¿Qué pasaría si dos esquejes idénticos, clones de la misma madre, crecieran en dos mundos paralelos?", "pause": 0.3},
+  {"id": "bottle", "text": "A la izquierda, el mundo de botellas: fibra de coco inerte, y todo el alimento llega digerido, como suero en un hospital."},
+  {"id": "fast", "text": "Crece rapidísimo, porque no gasta energía fabricando exudados para alimentar a nadie."},
+  {"id": "depend", "text": "Pero depende de ti para todo."},
+  {"id": "collapse", "text": "Si el medidor de pH se descalibra un día, o se corta el riego, colapsa.", "pause": 0.3},
+  {"id": "living", "text": "A la derecha, el mundo vivo: una metrópolis subterránea de hongos micorrícicos y bacterias."},
+  {"id": "slow", "text": "Al principio va más lento, porque está construyendo su ejército bajo tierra."},
+  {"id": "stress", "text": "Pero en floración, millones de microbios la mantienen en un estrés leve y constante."},
+  {"id": "isr", "text": "Eso activa sus defensas naturales. Se llama resistencia sistémica inducida.", "pause": 0.3},
+  {"id": "terp", "text": "Y sus tricomas fabrican terpenos y flavonoides que la planta de botella nunca tuvo motivo para fabricar.", "pause": 0.3},
+  {"id": "end", "text": "Misma genética. Distinto mundo. Distinta planta."}
+ ]
+}

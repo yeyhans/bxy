@@ -1,0 +1,17 @@
+[
+ [0.04, "whoosh", -14],
+ [["L1", "ethiopia"], "whoosh", -8],
+ [["L1", "goat"], "pop", -10],
+ [["L1", "dancing"], "boing", -8],
+ ["TITLE", "sting", -4],
+ ["L3", "blip", -6],
+ [["L3", "awake"], "shimmer", -10],
+ ["L4", "blip", -6],
+ [["L4", "bans"], "thud", -5],
+ [["L5", "says"], "swish", -8],
+ [["L5", "no"], "ding", -10],
+ ["L6", "blip", -6],
+ [["L6", "house"], "pop", -10],
+ [["L7", "everywhere"], "ticks", -10],
+ [["L7", "guess"], "sting", -4]
+]

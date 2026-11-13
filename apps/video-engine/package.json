@@ -1,0 +1,25 @@
+{
+  "name": "@bxy/video-engine",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "whatif:sync": "node scripts/sync-whatif.mjs",
+    "history:sync": "node scripts/sync-history.mjs"
+  },
+  "dependencies": {
+    "@bxy/shared-types": "workspace:*",
+    "@remotion/cli": "4.0.543",
+    "@remotion/google-fonts": "4.0.543",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "4.0.543"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "typescript": "^5.9.3"
+  }
+}

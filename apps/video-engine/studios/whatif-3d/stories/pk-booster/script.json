@@ -1,0 +1,21 @@
+{
+ "title": "El tsunami de fósforo",
+ "lang": "es",
+ "engine": "edge",
+ "edge_voice": "es-CL-LorenzoNeural",
+ "whisper_model": "small",
+ "length": [45, 70],
+ "pause": 0.15,
+ "lines": [
+  {"id": "hook", "text": "¿Qué pasaría si pudieras ver lo que hace una botella de P K a nivel microscópico?", "pause": 0.3},
+  {"id": "network", "text": "Imagina que estás en la semana cuatro de floración y que, bajo la tierra, tu planta tiene una red enorme de micorrizas que le trae fósforo."},
+  {"id": "trade", "text": "A cambio, ella le paga al hongo con azúcares; es decir, carbono por fósforo. Un trato justo.", "pause": 0.3},
+  {"id": "bottle", "text": "Pero entonces compras un engordador de cogollos, un P K trece catorce, y lo echas al riego pensando que va a ayudar."},
+  {"id": "tsunami", "text": "Sin embargo, allá abajo lo que cae es un tsunami de fósforo libre."},
+  {"id": "math", "text": "Y como la planta es una calculadora implacable, saca la cuenta: ¿para qué pagarle al hongo, si el fósforo cae gratis del cielo?", "pause": 0.3},
+  {"id": "cut", "text": "Por eso corta el envío de carbono hacia la raíz y, sin comida, la red de micorrizas colapsa."},
+  {"id": "encyst", "text": "Además, la conductividad se dispara, así que los protozoos se enquistan y el suelo vivo se apaga.", "pause": 0.3},
+  {"id": "factory", "text": "En otras palabras, acabas de destruir tu fábrica biológica."},
+  {"id": "name", "text": "Esto es un suelo dependiente: desde ahora, vas a necesitar botellas hasta la cosecha."}
+ ]
+}

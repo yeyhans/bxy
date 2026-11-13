@@ -1,0 +1,33 @@
+# Synced render outputs (regenerate with `pnpm whatif:sync <story>`)
+public/whatif/
+public/history/
+
+# whatif-3d studio: local tooling and heavy downloads
+studios/whatif-3d/.venv/
+studios/whatif-3d/blender/
+studios/whatif-3d/assets/
+studios/whatif-3d/__pycache__/
+studios/whatif-3d/**/__pycache__/
+
+# whatif-3d studio: per-story render outputs (keep script.json and scene.py)
+studios/whatif-3d/stories/*/frames/
+studios/whatif-3d/stories/*/preview_frames/
+studios/whatif-3d/stories/*/stills/
+studios/whatif-3d/stories/*/captions/
+studios/whatif-3d/stories/*/vo/
+studios/whatif-3d/stories/*/*.blend
+studios/whatif-3d/stories/*/*.blend1
+studios/whatif-3d/stories/*/*.wav
+studios/whatif-3d/stories/*/*.mp4
+studios/whatif-3d/stories/*/qa_sheet.jpg
+
+# history-i-guess studio: per-story build outputs (keep script.json, sources.md, sounds.json, scenes.js)
+studios/history-i-guess/**/__pycache__/
+studios/history-i-guess/stories/*/build/
+studios/history-i-guess/stories/*/out/
+studios/history-i-guess/stories/*/voice/
+studios/history-i-guess/stories/*/takes/
+studios/history-i-guess/stories/*/qa/
+
+# Remotion render output
+out/

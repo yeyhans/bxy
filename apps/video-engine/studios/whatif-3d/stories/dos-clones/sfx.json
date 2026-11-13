@@ -1,0 +1,99 @@
+[
+{
+"type": "whoosh",
+"at": 0.45,
+"vol": 0.45
+},
+{
+"type": "whoosh",
+"at": 4.377,
+"vol": 0.5
+},
+{
+"type": "thud",
+"at": 7.271,
+"vol": 0.5
+},
+{
+"type": "thud",
+"at": 7.451,
+"vol": 0.5
+},
+{
+"type": "thud",
+"at": 8.319,
+"vol": 0.5
+},
+{
+"type": "pour",
+"at": 9.308,
+"vol": 0.12,
+"dur": 11.805999999999997
+},
+{
+"type": "click",
+"at": 19.583,
+"vol": 0.6
+},
+{
+"type": "click",
+"at": 19.883,
+"vol": 0.4
+},
+{
+"type": "thud",
+"at": 22.086,
+"vol": 0.4
+},
+{
+"type": "bubble",
+"at": 24.567,
+"vol": 0.5
+},
+{
+"type": "bubble",
+"at": 25.746,
+"vol": 0.4
+},
+{
+"type": "bubble",
+"at": 26.781,
+"vol": 0.4
+},
+{
+"type": "pop",
+"at": 31.989,
+"vol": 0.4
+},
+{
+"type": "pop",
+"at": 32.389,
+"vol": 0.35
+},
+{
+"type": "chime",
+"at": 36.497,
+"vol": 0.3
+},
+{
+"type": "hum",
+"at": 38.792,
+"vol": 0.2,
+"dur": 1.6
+},
+{
+"type": "chime",
+"at": 41.145,
+"vol": 0.25
+},
+{
+"type": "whoosh",
+"at": 41.931,
+"vol": 0.25
+},
+{
+"type": "chime",
+"at": 49.388,
+"vol": 0.35
+}
+]
