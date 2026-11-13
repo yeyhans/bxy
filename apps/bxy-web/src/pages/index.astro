@@ -1,0 +1,80 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { Navbar } from '../components/Navbar';
+import { HeroSection } from '../components/HeroSection';
+import { HeroVideo } from '../components/HeroVideo';
+import { ComparisonSection } from '../components/ComparisonSection';
+import { CorePackageSection } from '../components/CorePackageSection';
+import { ModularEcosystemSection } from '../components/ModularEcosystemSection';
+import { CaseStudySection } from '../components/CaseStudySection';
+import { DualStudioSection } from '../components/DualStudioSection';
+import { InteractiveQuoter } from '../components/InteractiveQuoter';
+import { SectionHeading } from '../components/SectionHeading';
+import { Footer } from '../components/Footer';
+import { CORE_PRICE_NET, formatClp, heroVideo } from '../config/site';
+import '../styles/global.css';
+
+export const prerender = true;
+
+const title = 'BxY Commerce Core | E-commerce propio por $350.000 + IVA, pago único';
+const description =
+	'Storefront a medida de por vida, Admin + API y base de datos dedicada en el edge de Cloudflare. Pago único de $350.000 CLP + IVA, 0% comisión por venta.';
+
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'Organization',
+			name: 'BxY',
+			url: 'https://www.bxy.cl',
+			sameAs: ['https://bolderprocess.com/', 'https://yhans.cl'],
+		},
+		{
+			'@type': 'Offer',
+			name: 'BxY Commerce Core',
+			description: 'Storefront de por vida + Admin + API + base de datos dedicada.',
+			price: CORE_PRICE_NET,
+			priceCurrency: 'CLP',
+			priceSpecification: {
+				'@type': 'UnitPriceSpecification',
+				price: CORE_PRICE_NET,
+				priceCurrency: 'CLP',
+				valueAddedTaxIncluded: false,
+			},
+		},
+	],
+};
+---
+
+<html lang="es-CL">
+	<head>
+		<BaseHead title={title} description={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+	</head>
+	<body class="bg-bg text-fg">
+		<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-40 focus:bg-accent focus:px-3 focus:py-2 focus:text-accent-fg">
+			Saltar al contenido
+		</a>
+		<Navbar />
+		<main id="main" class="mx-auto max-w-[1400px] border-x border-line">
+			<HeroSection>
+				<HeroVideo client:idle src={heroVideo.src} poster={heroVideo.poster} label={heroVideo.label} />
+			</HeroSection>
+			<ComparisonSection />
+			<CorePackageSection />
+			<ModularEcosystemSection />
+			<CaseStudySection />
+			<DualStudioSection />
+			<section id="configurador" aria-labelledby="configurador-title" class="border-b border-line">
+				<SectionHeading
+					id="configurador-title"
+					index="05"
+					title="Configurador de proyecto & cotización inmediata"
+					intro={`Arma tu stack sobre el Core de ${formatClp(CORE_PRICE_NET)} + IVA y envíanos la solicitud lista.`}
+				/>
+				<InteractiveQuoter client:visible />
+			</section>
+			<Footer />
+		</main>
+	</body>
+</html>

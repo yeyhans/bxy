@@ -25,3 +25,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local agent tooling cache
+.atl/
+
+# third-party source kits kept locally (integrated copies live in apps/video-engine/studios/)
+apps/video-engine/recurses/

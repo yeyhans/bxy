@@ -1,19 +1,16 @@
 {
-  "name": "byx",
+  "name": "bxy-platform",
+  "private": true,
   "type": "module",
-  "version": "0.0.1",
+  "packageManager": "pnpm@10.20.0",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/sitemap": "^3.7.2",
-    "@astrojs/vercel": "^10.0.6",
-    "astro": "^6.2.2"
+    "dev:web": "pnpm --filter @bxy/web dev",
+    "dev:video": "pnpm --filter @bxy/video-engine studio",
+    "build:web": "pnpm --filter @bxy/web build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "create-client": "bash scripts/create-client.sh"
   }
 }

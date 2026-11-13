@@ -1,0 +1,5 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+# templates/* are NOT workspace packages: they are copied into external
+# client repositories by scripts/create-client.sh and installed there.

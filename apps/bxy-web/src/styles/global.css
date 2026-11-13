@@ -1,0 +1,226 @@
+@import "tailwindcss";
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/jetbrains-mono";
+
+/*
+ * BxY design tokens. Dark-only by brand decision (industrial / technical brutalist).
+ * --accent is intentionally neutral until Bolder closes the final brand brief:
+ * change this single value and every CTA, focus ring and highlight follows.
+ */
+:root {
+  --bg: #09090b;
+  --surface: #121215;
+  --surface-2: #18181b;
+  --fg: #fafafa;
+  --fg-muted: #a1a1aa;
+  --line: #27272a;
+  --line-strong: #3f3f46;
+  --accent: #d4ff3f;
+  --accent-fg: #09090b;
+  --danger: #f87171;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-fg: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-danger: var(--danger);
+
+  --font-display: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SFMono-Regular", monospace;
+
+  --radius-*: initial;
+  --shadow-*: initial;
+}
+
+@layer base {
+  html {
+    background: var(--bg);
+    color: var(--fg);
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-fg);
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Technical label: mono, compact, uppercase. */
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 2.75rem;
+    padding: 0 1.125rem;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: 1px solid var(--line-strong);
+    transition:
+      background-color 160ms cubic-bezier(0.16, 1, 0.3, 1),
+      color 160ms cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 160ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 120ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-fg);
+    border-color: var(--accent);
+  }
+  .btn-primary:hover {
+    background: var(--fg);
+    border-color: var(--fg);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--fg);
+  }
+  .btn-ghost:hover {
+    border-color: var(--fg);
+    background: var(--surface-2);
+  }
+
+  /* Faint engineering grid used as a texture inside a few panels. */
+  .grid-texture {
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: -1px -1px;
+  }
+
+  .field {
+    width: 100%;
+    height: 2.75rem;
+    padding: 0 0.75rem;
+    background: var(--bg);
+    border: 1px solid var(--line-strong);
+    color: var(--fg);
+    font-family: var(--font-mono);
+    font-size: 13px;
+  }
+  .field::placeholder {
+    color: #8b8b94;
+  }
+  .field:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .field[aria-invalid="true"] {
+    border-color: var(--danger);
+  }
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: no-preference) {
+    .enter {
+      animation: enter 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: calc(var(--i, 0) * 80ms);
+    }
+  }
+}
+
+/* Module motifs: a parcel travelling a route, a metric settling, frames rendering. */
+@media (prefers-reduced-motion: no-preference) {
+  .module-route {
+    animation: module-route 3.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  }
+  .module-bar {
+    transform-origin: bottom;
+    animation: module-bar 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .module-frame {
+    animation: module-frame 2.4s steps(1, end) infinite;
+  }
+}
+
+@keyframes module-route {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100% - 6px));
+  }
+}
+
+@keyframes module-bar {
+  from {
+    transform: scaleY(0.2);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes module-frame {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
